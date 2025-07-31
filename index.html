@@ -17,21 +17,164 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <style>
+      html {
+        font-size: 16px;
+      }
+      :root {
+        --brand: rgb(217, 7, 73);
+        --secondary: rgb(232, 60, 45);
+        --complementary: rgb(26, 30, 41);
+        --neutral1: rgb(102, 102, 102);
+        --neutral2: rgb(255, 255, 255);
+        --userColor_3: rgb(23, 23, 23);
+        --userColor_4: rgba(225, 32, 58, 0.1);
+        --textStyleColor_p_default_block: var(--neutral1);
+        --textStyleColor_h1_default_block: var(--neutral2);
+        --textStyleColor_h2_default_block: var(--userColor_3);
+        --textStyleColor_h3_default_block: var(--userColor_3);
+        --textStyleColor_h4_default_block: var(--neutral2);
+        --textStyleColor_custom_link: var(--brand);
+        --textStyleColor_custom_link_hover: rgb(255, 58, 120);
+        --textStyleColor_slider_header: var(--neutral2);
+        --textStyleColor_gallery_header: var(--neutral2);
+        --textStyleColor_p_default_block_white: var(--neutral2);
+        --textStyleColor_newsfeed_header: null;
+        --textStyleColor_newsfeed_date: #bababa;
+        --textStyleColor_button_default: var(--neutral2);
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .header {
+        width: 100%;
+        color: var(--neutral2);
+        background-image: linear-gradient(
+            to bottom,
+            rgba(232, 61, 45, 0.01),
+            rgba(232, 61, 45, 0.01)
+          ),
+          url("./assets/header.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) inset;
+      }
+      .navbar {
+        border: 2px solid var(--neutral2);
+      }
+      .nav-link {
+        color: var(--neutral2);
+      }
+      .nav-link:hover {
+        border: 1px solid var(--neutral2);
+        color: var(--neutral2);
+        transition: all 0.3s ease-in-out;
+      }
+      .hero {
+        width: 80%;
+      }
+      .hero a {
+        background-color: var(--neutral2);
+        color: var(--brand);
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .sec1-upper,
+      .sec1-lower {
+        width: 80%;
+      }
+
+      .upr-rgt,
+      .lwr-left {
+        width: 45%;
+      }
+
+      .upr-rgt a,
+      .lwr-left a {
+        border: 1px solid var(--brand);
+        background-color: var(--neutral2);
+        color: var(--brand);
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .upr-rgt a:hover,
+      .lwr-left a:hover {
+        background-color: rgba(255, 58, 120, 0.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .sec-2 {
+        width: 100%;
+        background: linear-gradient(to bottom, var(--brand), var(--secondary));
+      }
+      .sec2-container {
+        width: 90%;
+      }
+
+      .sec2-left,
+      .sec2-rgt {
+        width: 45%;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <img src="./assets/logo.webp" alt="" />
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid">
+          <img class="navbar-brand" src="./assets/logo.webp" alt="" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link px-3" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" aria-current="page" href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3"
+                  aria-current="page"
+                  href="./gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3"
+                  aria-current="page"
+                  href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About us</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
       </nav>
-      <div class="hero">
+
+      <div
+        class="hero d-flex flex-column align-items-center justify-content-center mx-auto text-center gap-4"
+      >
         <h1>Stay in touch with your friends and family</h1>
         <p>
           Liquam malesuada diam nec augue accumsan, non accumsan nunc
@@ -39,24 +182,26 @@
           id tellus et, sollicitudin tristique augue. Curabitur eleifend turpis
           non eros bibendum tempus dictum vel sapien.
         </p>
-        <a href="#footer-links">download</a>
+        <a href="#footer-links" class="px-5 py-3">download</a>
       </div>
     </header>
 
     <main>
       <section class="sec-1">
-        <div class="sec1-upper">
-          <div class="upr-left">
-            <div class="screen2">
+        <div
+          class="sec1-upper mx-auto my-12 d-flex justify-content-between align-items-center"
+        >
+          <div class="upr-left position-relative">
+            <div class="position-relative">
               <img src="./assets/screen_2.webp" alt="" />
             </div>
-            <div class="screen1">
+            <div class="position-absolute top-50 start-50">
               <img src="./assets/screen_1.webp" alt="" />
             </div>
           </div>
           <div class="upr-rgt">
-            <h3>Free download</h3>
-            <p>
+            <h3 class="mb-5">Free download</h3>
+            <p class="mb-5">
               Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
               pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
               malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
@@ -64,13 +209,15 @@
               enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla
               imperdiet sit amet magna.
             </p>
-            <a href="footer">download</a>
+            <a href="footer" class="px-5 py-3">download</a>
           </div>
         </div>
-        <div class="sec1-lower">
+        <div
+          class="sec1-lower mx-auto my-12 d-flex justify-content-between align-items-center"
+        >
           <div class="lwr-left">
-            <h3>Free download</h3>
-            <p>
+            <h3 class="mb-5">Free download</h3>
+            <p class="mb-5">
               Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
               pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
               malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
@@ -78,26 +225,28 @@
               enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla
               imperdiet sit amet magna.
             </p>
-            <a href="#footer-links">download</a>
+            <a href="#footer-links" class="px-5 py-3">download</a>
           </div>
-          <div class="lwr-rgt">
-            <div class="screen1">
+          <div class="lwr-rgt position-relative">
+            <div class="screen1 position-relative">
               <img src="./assets/screen_1.webp" alt="" />
             </div>
-            <div class="screen2">
+            <div class="screen2 position-absolute top-50 end-50">
               <img src="./assets/screen_2.webp" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="sec-2">
-        <div class="sec2-container">
-          <div class="sec2-left">
+      <section class="sec-2 py-5">
+        <div
+          class="sec2-container mx-auto d-flex align-items-center justify-content-between"
+        >
+          <div class="sec2-left d-flex gap-3">
             <div class="sec2-left-img">
               <img src="./assets/client_1.webp" alt="" />
             </div>
-            <div class="sec2-left-txt">
+            <div class="sec2-left-txt d-flex flex-column align-items-start">
               <h5>linda flinn</h5>
               <p>
                 Maecenas mattis imperdiet leo vitae sagittis. Integer non libero
@@ -107,11 +256,11 @@
               </p>
             </div>
           </div>
-          <div class="sec2-rgt">
+          <div class="sec2-rgt d-flex gap-3">
             <div class="sec2-rgt-img">
               <img src="./assets/client_2.webp" alt="" />
             </div>
-            <div class="sec2-rgt-txt">
+            <div class="sec2-rgt-txt d-flex flex-column align-items-start">
               <h5>tom fox</h5>
               <p>
                 Maecenas mattis imperdiet leo vitae sagittis. Integer non libero
