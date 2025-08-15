@@ -2,38 +2,115 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - Taste of Africa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-    <main>
-      <section>
-        <div>
-          <h3>Gallery<span>.</span></h3>
-          <p>
-            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-            pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
-            malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
-            porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet
-            enim. Phasellus fermentum in, dolor.
-          </p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Taste of Africa</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-        <form action="">
-          <div class="email">
-            <label for="email">Your e-mail</label>
-            <input type="email" id="email" placeholder="example@email.com" />
+      </div>
+    </nav>
+
+    <header
+      class="text-white text-center"
+      style="
+        background: url('https://source.unsplash.com/1600x500/?african-restaurant-interior')
+          center/cover no-repeat;
+      "
+    >
+      <div
+        style="
+          background: url('./assets/hero.jpg'), rgba(7, 53, 153, 0.6);
+          padding: 80px 0;
+        "
+      >
+        <div class="container">
+          <h1 class="display-4 fw-bold">Contact Us</h1>
+          <p class="lead">We’d love to hear from you</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h3>Send Us a Message</h3>
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning">
+                Send Message
+              </button>
+            </form>
           </div>
-          <div class="textarea">
-            <label for="textarea">Message</label>
-            <input
-              type="email"
-              id="textarea"
-              placeholder="Write message here"
-            />
+          <div class="col-md-6">
+            <h3>Our Location</h3>
+            <p>123 African Street, City, Country</p>
+            <p><i class="bi bi-telephone-fill"></i> +123 456 7890</p>
+            <p><i class="bi bi-envelope-fill"></i> contact@tasteofafrica.com</p>
+            <p><i class="bi bi-clock-fill"></i> Mon-Sun: 10am - 10pm</p>
           </div>
-          <button>send</button>
-        </form>
-      </section>
-    </main>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 Taste of Africa | All rights reserved.</p>
+    </footer>
   </body>
 </html>

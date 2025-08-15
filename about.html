@@ -2,46 +2,120 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - Taste of Africa</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
     />
   </head>
   <body>
-    <main>
-      <div class="about-sec">
-        <div class="about-img">
-          <img src="./assets/about-img.webp" alt="" />
-        </div>
-        <div class="about-txt">
-          <h3>About us</h3>
-          <p>
-            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-            pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
-            malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
-            porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet
-            enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla
-            imperdiet sit amet magna.
-          </p>
-          <ul>
-            <li>quisque lorem tortor fringilla sed, vestibulum id</li>
-            <li>eleifend justo vel bibendum sapien massa</li>
-            <li>ac turpis faucibus orci luctus non, consectetuer</li>
-            <li>sociis natoque penatibus et ultrices volutpat</li>
-            <li>ultricies eu, faucibus quis</li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Taste of Africa</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
-          <p>
-            Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-            Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-            ipsum primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum
-            dolor quam.
-          </p>
         </div>
       </div>
-    </main>
+    </nav>
+
+    <header
+      class="text-white text-center"
+      style="
+        background: url('https://source.unsplash.com/1600x500/?african-restaurant')
+          center/cover no-repeat;
+      "
+    >
+      <div
+        style="
+          background: url('./assets/hero.jpg'), rgba(7, 53, 153, 0.6);
+          padding: 80px 0;
+        "
+      >
+        <div class="container">
+          <h1 class="display-4 fw-bold">About Taste of Africa</h1>
+          <p class="lead">Celebrating the rich flavors and culture of Africa</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Our Story</h2>
+        <p>
+          Taste of Africa was founded to bring authentic African cuisine to food
+          lovers everywhere. We source fresh ingredients and traditional recipes
+          from across the continent to deliver a truly memorable dining
+          experience.
+        </p>
+
+        <h3 class="mt-5">Our Mission</h3>
+        <p>
+          To provide delicious African food that connects people to Africa's
+          culinary heritage.
+        </p>
+
+        <h3 class="mt-5">Meet Our Chefs</h3>
+        <div class="row g-4 mt-3">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/chef1.jpg" class="card-img-top" alt="Chef" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Chef Ayo</h5>
+                <p class="card-text">
+                  Master of West African flavors and spices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/chef3.jpg" class="card-img-top" alt="Chef" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Chef Nia</h5>
+                <p class="card-text">
+                  Expert in East African delicacies and stews.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="./assets/chef2.jpg" class="card-img-top" alt="Chef" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Chef Kwame</h5>
+                <p class="card-text">
+                  Specializes in grilled meats and traditional dishes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 Taste of Africa | All rights reserved.</p>
+    </footer>
   </body>
 </html>

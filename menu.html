@@ -3,14 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home - Taste of Africa</title>
+    <title>Menu - Taste of Africa</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
   </head>
   <body>
@@ -27,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
+              <a class="nav-link active" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -46,31 +42,28 @@
     <header
       class="text-white text-center"
       style="
-        background: url('https://source.unsplash.com/1600x600/?african-food')
+        background: url('https://source.unsplash.com/1600x500/?african-food')
           center/cover no-repeat;
       "
     >
       <div
-        class="py-5"
-        style="background: url('./assets/hero.jpg'), rgba(7, 53, 153, 0.6)"
+        style="
+          background: url('./assets/hero.jpg'), rgba(7, 53, 153, 0.6);
+          padding: 80px 0;
+        "
       >
         <div class="container">
-          <h1 class="display-4 fw-bold">
-            Experience Authentic African Flavors
-          </h1>
+          <h1 class="display-4 fw-bold">Our Menu</h1>
           <p class="lead">
-            Fresh, flavorful, and inspired by the heart of Africa
+            A variety of African delights to satisfy your cravings
           </p>
-          <a href="menu.html" class="btn btn-warning btn-lg mt-3"
-            >Explore Menu</a
-          >
         </div>
       </div>
     </header>
 
     <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Our Specials</h2>
+        <h2 class="mb-4 text-center">African Favorites</h2>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card">
@@ -82,9 +75,41 @@
               <div class="card-body text-center">
                 <h5 class="card-title">Jollof Rice</h5>
                 <p class="card-text">
-                  West Africa’s famous party rice with spicy tomato sauce.
+                  Spicy tomato rice with chicken and vegetables.
                 </p>
                 <span class="fw-bold">$12</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./assets/Egusi-Soup-and-Fufu.jpg"
+                class="card-img-top"
+                alt="Fufu & Soup"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Fufu & Egusi Soup</h5>
+                <p class="card-text">
+                  Classic West African dish with rich melon seed soup.
+                </p>
+                <span class="fw-bold">$15</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./assets/fried-plantain.jpg"
+                class="card-img-top"
+                alt="Plantain"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Fried Plantains</h5>
+                <p class="card-text">
+                  Sweet and golden fried plantains, a perfect side dish.
+                </p>
+                <span class="fw-bold">$5</span>
               </div>
             </div>
           </div>
@@ -94,7 +119,7 @@
               <div class="card-body text-center">
                 <h5 class="card-title">Beef Suya</h5>
                 <p class="card-text">
-                  Spicy grilled beef skewers with roasted groundnut spice.
+                  Spicy grilled beef skewers served with onions.
                 </p>
                 <span class="fw-bold">$10</span>
               </div>
@@ -110,39 +135,24 @@
               <div class="card-body text-center">
                 <h5 class="card-title">Fish Stew</h5>
                 <p class="card-text">
-                  Savory tomato-based stew with fresh Atlantic fish.
+                  Tomato-based stew with fresh Atlantic fish.
                 </p>
                 <span class="fw-bold">$14</span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-light py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">What Customers Say</h2>
-        <div class="row g-4">
           <div class="col-md-4">
-            <div class="p-4 bg-white shadow-sm h-100">
-              <p>
-                “Best African food I’ve had outside Africa! The Jollof was
-                perfect.”
-              </p>
-              <h6 class="fw-bold">— Sarah K.</h6>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="p-4 bg-white shadow-sm h-100">
-              <p>“The Suya is to die for! Spicy, smoky, and delicious.”</p>
-              <h6 class="fw-bold">— John M.</h6>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="p-4 bg-white shadow-sm h-100">
-              <p>“Feels like home. Reminds me of my grandma’s cooking.”</p>
-              <h6 class="fw-bold">— Amina D.</h6>
+            <div class="card">
+              <img
+                src="./assets/Groundnut-Soup-Recipe.jpg"
+                class="card-img-top"
+                alt="Groundnut Soup"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Groundnut Soup</h5>
+                <p class="card-text">Rich peanut soup with chicken or beef.</p>
+                <span class="fw-bold">$13</span>
+              </div>
             </div>
           </div>
         </div>
